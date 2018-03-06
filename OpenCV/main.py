@@ -2,9 +2,10 @@
 # -*- coding: UTF-8 -*-
 
 import cv2
+import numpy
 
 def getImage():
-    img = cv2.imread("test.a.bmp")
+    img = cv2.imread("test.bmp")
     img_shape=img.shape
     img=cv2.resize(img,(img_shape[1]/2,img_shape[0]/2),interpolation=cv2.INTER_CUBIC)
     return img
