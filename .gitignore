@@ -1,2 +1,10 @@
+# Images
+*.jpg
 *.bmp
+
+# Python
+*.pyc
 *.pyd
+
+#Doc
+*.docx
