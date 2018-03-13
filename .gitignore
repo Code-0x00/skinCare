@@ -8,3 +8,6 @@
 
 #Doc
 *.docx
+
+#temp
+out.txt
