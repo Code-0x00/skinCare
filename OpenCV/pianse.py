@@ -34,9 +34,9 @@ def pianse(img):
 	aMean=getMean(lab[1])
 	bMean=getMean(lab[2])
 
-	for i in range(3):
-		cv2.imshow('bb',lab[i])
-		cv2.waitKey(0)
+	#for i in range(3):
+	#	cv2.imshow('1',lab[i])
+	#	cv2.waitKey(0)
 
 	for i in range(img.shape[0]):
 		for j in range(img.shape[1]):
@@ -49,7 +49,7 @@ def pianse(img):
     
 if __name__=='__main__':
 	#img=getImage('t8.bmp')
-	img=getImage('t3.bmp')
+	img=getImage('09-32-18.bmp')
 	cv2.imshow('src',img)
 	img=pianse(img)
 	cv2.imshow('i',img)

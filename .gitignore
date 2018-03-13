@@ -10,4 +10,4 @@
 *.docx
 
 #temp
-out.txt
+*.txt
