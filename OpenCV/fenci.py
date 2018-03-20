@@ -4,6 +4,8 @@
 import cv2
 import numpy
 
+import pianse
+
 def yanzheng(img):
 
     bgr=cv2.split(img)
@@ -34,6 +36,7 @@ def test():
     img=cv2.imread('t4.bmp')
     img_shape=img.shape
     img=cv2.resize(img,(img_shape[1]/2,img_shape[0]/2),interpolation=cv2.INTER_CUBIC)
+    img=pianse.pianse(img)
     ret,mianji,count_fenci=yanzheng(img)
     cv2.imshow('src',img)
     cv2.imshow('ret',ret)
