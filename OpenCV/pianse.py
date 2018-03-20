@@ -34,10 +34,6 @@ def pianse(img):
 	aMean=getMean(lab[1])
 	bMean=getMean(lab[2])
 
-	for i in range(3):
-		cv2.imshow('bb',lab[i])
-		cv2.waitKey(0)
-
 	for i in range(img.shape[0]):
 		for j in range(img.shape[1]):
 			lab[1][i][j]=numpy.uint8(float(lab[1][i][j])/aMean*128.0)
