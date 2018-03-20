@@ -45,7 +45,7 @@ def pianse(img):
     
 if __name__=='__main__':
 	#img=getImage('t8.bmp')
-	img=getImage('t3.bmp')
+	img=getImage('09-32-18.bmp')
 	cv2.imshow('src',img)
 	img=pianse(img)
 	cv2.imshow('i',img)

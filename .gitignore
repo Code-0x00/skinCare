@@ -1,6 +1,7 @@
 # Images
 *.jpg
 *.bmp
+*.png
 
 # Python
 *.pyc
@@ -10,4 +11,4 @@
 *.docx
 
 #temp
-out.txt
+*.txt
